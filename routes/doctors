@@ -1,0 +1,161 @@
+var express = require("express");
+var doctorRouter = express.Router();
+doctorRouter.get("/", function (req, res) {
+  res.json(doctors);
+});
+
+
+const doctors = [
+  {
+    id: 1,
+    name: "Dr. Ojiteli Kosisochukwu",
+    img: "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/491841386_3016644805167713_8947401961811499257_n.jpg?stp=c0.296.1152.1152a_dst-jpg_s206x206_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ad20&_nc_eui2=AeEeoDclQO0wCGk_aItjyLw-MqOzpBod9XMyo7OkGh31cx0vLXH1PKmenliKw7Q6NdDrYrTX3sg2HlrmiQZujCod&_nc_ohc=oaB0HCR3F94Q7kNvwGynaNZ&_nc_oc=AdnYEn6tZIGPmMq6iKRCBeVqJV_stmwMP7KyU92eHIj471ViVkG8eblixVwWhangKUKoJIO1KxOGExzpFG9GJ324&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=ums-QoY_JRrT59lwTK9gBg&oh=00_AfJYz6RWfYGbGry1MELb5aQuzRE6ksW_ZYYEe7iIc-Dwyw&oe=68204BF8",
+    specialty: "Cardiologist",
+    isRated: true,
+    desc: "helps patients transform their lifestyle through personalized nutrition plans. Her friendly guidance makes healthy eating achievable for all",
+    qualifications: [
+        "MBBS - University of Lagos",
+        "MD - Harvard Medical School",
+        "Certified by American Board of Cardiology",
+      ],
+      availability: "Monday to Friday, 8:00am - 5:00pm"
+  },
+  {
+    id: 2,
+    name: "Dr. Ezinne Ozoagu",
+    img: "https://scontent-los2-1.xx.fbcdn.net/v/t51.75761-15/486118408_17999964212758208_6717982431565825888_n.jpg?stp=dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vLfVbA2pf7MQ7kNvwFmyZIq&_nc_oc=AdmL8xcrPg4d6k6-0V1XxkQI89KTLM6nv-pCPk5wtPmw8xz5ro0pea6abPjsHcwSaD0&_nc_zt=23&_nc_ht=scontent-los2-1.xx&_nc_gid=SSHfcVf1WbU9Mtl6CY6KIw&oh=00_AfELY-ff9UUmPwgbqMBhzadlo-JQhymxnlCQ2smpc9H-sw&oe=6811F8DD",
+    specialty: "Psychiatrist",
+    isRated: true,
+    desc: "brings empathy and expertise to mental health care. She supports patients through challenges like anxiety, depression, and stress with tailored treatment plans and a non-judgmental ear.",
+    qualifications: [
+        "MBBS",
+        "MD in Psychiatry",
+        "Certification in Cognitive Behavioral Therapy"
+      ],
+      availability: "Saturday to Sunday, 8:00am - 5:00pm"
+  },
+
+  {
+    id: 3,
+    name: "Dr. Shan George",
+    img: "https://images.pexels.com/photos/6749778/pexels-photo-6749778.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Cardiologist",
+    isRated: false,
+    desc: "is a caring and experienced cardiologist passionate about women’s health. With over 10 years of experience, she creates a safe and supportive space for her patients",
+    qualifications: [
+    
+            "MBBS",
+            " MD in Internal Medicine",
+            "DM in Cardiology",
+            "Board Certification (e.g., American Board of Cardiology)"
+          
+      ],
+      availability: "Thursday to Friday, 11:00am - 7:00pm"
+  },
+  {
+    id: 4,
+    name: "Dr. Zik Seyi",
+    img: "https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Psychiatrist",
+    isRated: false,
+    desc: "brings empathy and expertise to mental health care. She supports patients through challenges like anxiety, depression, and stress with tailored treatment plans and a non-judgmental ear.",
+    qualifications: [
+        "MBBS",
+        "MD in Psychiatry",
+        "Certification in Cognitive Behavioral Therapy"
+      ],
+      availability: "Monday to Friday, 8:00am - 5:00pm"
+
+  },
+  {
+    id: 5,
+    name: "Dr. Odeseye Adesumbo",
+    img: "https://media.licdn.com/dms/image/v2/D4D22AQGbJeVlkIufCw/feedshare-shrink_1280/B4DZWxBqJ.HYAw-/0/1742431758000?e=1748476800&v=beta&t=SflzYmbcQuTjwuj5f2CszRuyo93KcCbS80C3kNraL9c",
+    specialty: "Gynecologist",
+    isRated: true,
+    desc: "is a caring and experienced gynecologist passionate about women’s health. With over 10 years of experience, she creates a safe and supportive space for her patients",
+    qualifications: [
+        "MBBS",
+         "MD/MS in Obstetrics & Gynecology",
+        "Fellowship in Reproductive Medicine"
+      ],
+      availability: "Tuesday to Thursday, 9:00am - 4:00pm"
+  },
+  {
+    id: 6,
+    name: "Dr. Chidimma Okonkwo",
+    img: "https://images.pexels.com/photos/3902885/pexels-photo-3902885.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Nutritionist",
+    isRated: true,
+    desc: "helps patients transform their lifestyle through personalized nutrition plans. Her friendly guidance makes healthy eating achievable for all",
+    qualifications: [
+        "MBBS",
+         "MD/MS in Nutrition & Dietetics",
+        "Fellowship in Nutrition & Dietetics"
+    ],
+    availability: "Monday to Friday, 10:00am - 3:00pm"
+  },
+  {
+    id: 7,
+    name: "Dr. Nnamdi Okonkwo",
+    img: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Nutritionist",
+    isRated: false,
+    desc: "helps patients transform their lifestyle through personalized nutrition plans. Her friendly guidance makes healthy eating achievable for all",
+    qualifications: [
+        "MBBS",
+         "MD/MS in Nutrition & Dietetics",
+        "Fellowship in Nutrition & Dietetics"
+    ],
+    availability: "Monday to Friday, 10:00am - 3:00pm"
+  },
+  {
+    id: 8,
+    name: "Dr. Wilson Hassan",
+    img: "https://images.pexels.com/photos/4270371/pexels-photo-4270371.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Nutrionist",
+    isRated: false,
+    desc: "helps patients transform their lifestyle through personalized nutrition plans. Her friendly guidance makes healthy eating achievable for all",
+    qualifications: [
+        "MBBS",
+         "MD/MS in Nutrition & Dietetics",
+        "Fellowship in Nutrition & Dietetics"
+    ],
+    availability: "Monday to Friday, 10:00am - 3:00pm"
+  },
+  {
+    id: 9,
+    name: "Dr. Obuekwe Chidimma",
+    img: "https://images.pexels.com/photos/7578806/pexels-photo-7578806.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Cardiologist",
+    isRated: false,
+    desc: "is a caring and experienced cardiologist passionate about women’s health. With over 10 years of experience, she creates a safe and supportive space for her patients",
+    qualifications: [
+        "MBBS",
+        " MD in Internal Medicine",
+        "DM in Cardiology",
+        "Board Certification (e.g., American Board of Cardiology)"
+      ],
+      availability: "Tuesday to Thursday, 9:00am - 4:00pm"
+
+
+    
+
+  },
+  {
+    id: 10,
+    name: "Dr. Judy Austin",
+    img: "https://images.pexels.com/photos/5206931/pexels-photo-5206931.jpeg?auto=compress&cs=tinysrgb&w=400",
+    specialty: "Gynaecologist",
+    isRated: false,
+    desc: "is a caring and experienced gynecologist passionate about women’s health. With over 10 years of experience, she creates a safe and supportive space for her patients",
+    qualifications: [
+        "MBBS",
+         "MD/MS in Obstetrics & Gynecology",
+        "Fellowship in Reproductive Medicine"
+    ]
+
+  },
+];
+
+module.exports = doctorRouter;

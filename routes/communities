@@ -1,0 +1,102 @@
+var express = require('express');
+var communityRouter = express.Router();
+communityRouter.get('/', function(req, res) {
+    res.json(categories);
+  });
+const categories = [
+    {
+        id: "Abu-ja",
+        name:"Abuja",
+        session : [
+            {
+                id: "Lokoja-Abuja1",
+                name:"Lokoja-Abuja",
+                text: "Abuja ipsum dolor sit amet consectetur adipisicing elit. Odio quasi ullam at eligendi saepe, consequuntur repellendus autem recusandae est maxime.",
+                speaker:{
+                    name:"Kosi",
+                    title: "koko",
+                    org: "koo",
+                }
+                
+
+            },
+            {
+                name: "Gwarinpa-Abuja",
+                id: "Gwarinpa-Abuja1",
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet cum quasi dolorum assumenda maxime alias, impedit illo sapiente?",
+                speaker: {
+                    speaker:{
+                        name:"Kosiso",
+                        title: "kokoso",
+                        org: "kookoo",
+                    }
+
+                }
+            }
+        ] 
+    },
+    {
+        id: "La-gos",
+        name:"Lagos",
+        text:" Lagos ipsum dolor sit amet consectetur adipisicing elit. Odio quasi ullam at eligendi saepe, consequuntur repellendus autem recusandae est maxime.",
+        session : [
+            {
+                id: "Yaba-Lagos1",
+                name:"Yaba-Lagos",
+                text: "Lagos ipsum dolor sit amet consectetur adipisicing elit. Odio quasi ullam at eligendi saepe, consequuntur repellendus autem recusandae est maxime.",
+                speaker:{
+                    name:"Chimma",
+                    title: "Mma",
+                    org: "Mama",
+                }
+            },
+            {
+                name: "Akoka-Lagos",
+                id: "Akoka-Lagos1",
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet cum quasi dolorum assumenda maxime alias, impedit illo sapiente?",
+                speaker: {
+                    speaker:{
+                        name:"Chidimma",
+                        title: "Chimma",
+                        org: "Mamam",
+                    }
+
+                }
+            }
+        ] 
+    },
+    {
+        id: "Enu-gu",
+        name:"Enugu",
+        text:" Enugu ipsum dolor sit amet consectetur adipisicing elit. Odio quasi ullam at eligendi saepe, consequuntur repellendus autem recusandae est maxime.",
+        session : [
+            {
+                id: "Abakpa-Enugu1",
+                name:"Abakpa-Enugu",
+                text: "Enugu ipsum dolor sit amet consectetur adipisicing elit. Odio quasi ullam at eligendi saepe, consequuntur repellendus autem recusandae est maxime.",
+                speaker:{
+                    name:"Chioma",
+                    title: "Choko",
+                    org: "Chi",
+                }
+                
+
+            },
+            {
+                id: "Emene-Enugu1",
+                name:"Emene-Enugu",
+                text: "Enugu ipsum dolor sit amet consectetur adipisicing elit. Odio quasi ullam at eligendi saepe, consequuntur repellendus autem recusandae est maxime.",
+                speaker:{
+                    name:"Chiomachukwu",
+                    title: "Chyoma",
+                    org: "Chimo",
+                }
+                
+
+            }
+        ] 
+    },
+    
+]
+
+module.exports = communityRouter;
