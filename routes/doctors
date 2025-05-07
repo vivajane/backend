@@ -10,7 +10,7 @@ const doctors = [
   {
     id: 1,
     name: "Dr. Ojiteli Kosisochukwu",
-    img: "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/491841386_3016644805167713_8947401961811499257_n.jpg?stp=c0.296.1152.1152a_dst-jpg_s206x206_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ad20&_nc_eui2=AeEeoDclQO0wCGk_aItjyLw-MqOzpBod9XMyo7OkGh31cx0vLXH1PKmenliKw7Q6NdDrYrTX3sg2HlrmiQZujCod&_nc_ohc=oaB0HCR3F94Q7kNvwGynaNZ&_nc_oc=AdnYEn6tZIGPmMq6iKRCBeVqJV_stmwMP7KyU92eHIj471ViVkG8eblixVwWhangKUKoJIO1KxOGExzpFG9GJ324&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=ums-QoY_JRrT59lwTK9gBg&oh=00_AfJYz6RWfYGbGry1MELb5aQuzRE6ksW_ZYYEe7iIc-Dwyw&oe=68204BF8",
+    img: "https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/469495453_2898448070320721_7766291551234700708_n.jpg?stp=c0.135.1638.1638a_dst-jpg_s206x206_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ad20&_nc_eui2=AeHhXNmK3VKGbPjSM1bdbxX1MQSun5L7sMQxBK6fkvuwxCFLO4ooS703no6ZroMasKjOcoh4E-4bGQus5UPenNk1&_nc_ohc=GDV_TQw2AnMQ7kNvwEwf6gE&_nc_oc=AdkENxEoIkh366ufQOAFwQj_Q-LZmmKz3PRNZ3Zpnwgfk1x6CVlOFpxaOItcdfmnNMxX8XYBueAeb5blOFrPvd6m&_nc_zt=23&_nc_ht=scontent-los2-1.xx&_nc_gid=9UfT4ISPFGXxvOssdO9KvA&oh=00_AfLdaCn93n4M3XR_sRRfi6zVQYPliAqmFLEHmQ_Iz2CUOw&oe=6821C2C6",
     specialty: "Cardiologist",
     isRated: true,
     desc: "helps patients transform their lifestyle through personalized nutrition plans. Her friendly guidance makes healthy eating achievable for all",
