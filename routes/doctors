@@ -1,6 +1,7 @@
 var express = require("express");
 var doctorRouter = express.Router();
 doctorRouter.get("/", function (req, res) {
+  console.log("Doctors API hit");
   res.json(doctors);
 });
 
