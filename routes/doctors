@@ -24,7 +24,7 @@ const doctors = [
   {
     id: 2,
     name: "Dr. Uriel Ezzy",
-    img: "https://images.pexels.com/photos/3846009/pexels-photo-3846009.jpeg?auto=compress&cs=tinysrgb&w=400",
+    img: "https://images.pexels.com/photos/4270088/pexels-photo-4270088.jpeg?auto=compress&cs=tinysrgb&w=400",
     specialty: "Psychiatrist",
     isRated: true,
     desc: "brings empathy and expertise to mental health care. She supports patients through challenges like anxiety, depression, and stress with tailored treatment plans and a non-judgmental ear.",
