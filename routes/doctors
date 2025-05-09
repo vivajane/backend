@@ -114,7 +114,7 @@ const doctors = [
     id: 8,
     name: "Dr. Wilson Hassan",
     img: "https://images.pexels.com/photos/4270371/pexels-photo-4270371.jpeg?auto=compress&cs=tinysrgb&w=400",
-    specialty: "Nutrionist",
+    specialty: "Nutritionist",
     isRated: false,
     desc: "helps patients transform their lifestyle through personalized nutrition plans. Her friendly guidance makes healthy eating achievable for all",
     qualifications: [
@@ -147,7 +147,7 @@ const doctors = [
     id: 10,
     name: "Dr. Judy Austin",
     img: "https://images.pexels.com/photos/5206931/pexels-photo-5206931.jpeg?auto=compress&cs=tinysrgb&w=400",
-    specialty: "Gynaecologist",
+    specialty: "Gynecologist",
     isRated: false,
     desc: "is a caring and experienced gynecologist passionate about women’s health. With over 10 years of experience, she creates a safe and supportive space for her patients",
     qualifications: [
